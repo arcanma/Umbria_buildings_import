@@ -70,7 +70,7 @@ class EdifTranslation(ogr2osm.TranslationBase):
         if attrs["edifc_sot"] == "02":
             tags["location"] = "underground"
             tags["building:levels"] = "0"
-            tags["fixme"] = "Check location, if not verifiable remove geometry" 
+            tags["fixme:buildind"] = "Check location, if not verifiable remove geometry" 
 
         match attrs["edifc_ty"]:
             case "04":
