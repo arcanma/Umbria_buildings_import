@@ -87,9 +87,6 @@ class EdifTranslation(ogr2osm.TranslationBase):
                 tags["building"] = "hangar"
             case "16":
                 tags["building"] = "temple"
-            case "17":
-                tags["disused:watermill"] = "yes"
-                tags["building"] = "yes"
             case "19":
                 tags["building"] = "sports_hall"
             case "21":
@@ -118,7 +115,6 @@ class EdifTranslation(ogr2osm.TranslationBase):
                 tags["admin_level"] = "4"
             case "030101":
                 tags["amenity"] = "social_facility"
-                tags["healthcare"] = "hospital"
             case "030102":
                 tags["amenity"] = "hospital"
                 tags["healthcare"] = "hospital"
@@ -219,7 +215,7 @@ class EdifTranslation(ogr2osm.TranslationBase):
 #                tags["fixme:building"] = "resurvey status (unknown)"
 # ******
 # 1/4 of the geometries have this status, doing a sample test out of 30 of them only one is not a real building,
-# so this check is skippe for all of them
+# so this check is skipped for all of them
 #******
 
         return tags
