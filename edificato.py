@@ -48,7 +48,7 @@ check_geom     Da controllare x bordo reg        The shape could be incomplete i
 
 the command to be used is:
 
-ogr2osm --suppress-empty-tags -t edificato.py -f comune_nom_*.gpkg (replace the * with the municipality name)
+ogr2osm --suppress-empty-tags -t edificato.py -f edificato_*.gpkg (replace the * with the municipality name)
 
 '''
 
